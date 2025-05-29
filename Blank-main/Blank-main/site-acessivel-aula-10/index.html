@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="BLANK - Uma empresa focada em criar produtos únicos para cada cliente">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <title>BLANK - Produtos personalizados</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="p-3 p-md-5">
+        <nav class="container d-flex justify-content-between align-items-center">
+            <img src="img/logo.png" alt="Logo BLANK" class="nav-img" loading="lazy">
+            <ul class="nav">
+                <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+            </ul>
+            <div id="acessibilidade" class="menu-acessibilidade"> 
+                <button id="botao-acessibilidade" class="btn btn-primary fw-bold rotacao-botao" aria-expanded="false">Acessibilidade</button>
+                <div id="opcoes-acessibilidade" class="opcoes-acessibilidade apresenta-lista">
+                    <button id="aumentar-fonte" class="btn btn-primary fw-bold" aria-label="Aumentar o tamanho da fonte">A+</button>
+                    <button id="diminuir-fonte" class="btn btn-primary fw-bold" aria-label="Diminuir o tamanho da fonte">A-</button>
+                    <button id="alterna-contraste" class="btn btn-primary fw-bold" aria-label="Alternar o contraste de cores"><i class="bi bi-shadows"></i></button>         
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <section id="inicio" class="my-5">
+            <div class="inicio-fundo d-flex flex-column flex-md-row justify-content-between align-items-center">
+                <div class="esquerda-conteudo mb-4 mb-md-0">
+                    <h1 class="display-4 text-white fst-italic fw-bold">BLANK</h1>
+                    <img src="img/boas-vindas.jpg" alt="Boas vindas à BLANK" class="mb-3" width="563" height="278" loading="lazy">
+                    <a href="#tropicalia" class="btn btn-primary btn-lg botao-inicio fw-semibold">Quero conhecer!</a>
+                </div>
+                <img src="img" alt="BLANK" title="BLANK" class="img-fluid img-inicio">
+            </div>
+        </section>
+
+        <section id="tropicalia" class="my-5 py-5 secao-tropicalia" tabindex="0" aria-label="Seção explicativa sobre a BLANK">
+            <div class="container d-flex flex-column flex-md-row align-items-center">
+                <div class="col-md-4 d-flex justify-content-center mb-4 mb-md-0">
+                    <img src="img/proposito.png" alt="Nosso propósito" class="rounded-pill" width="273" height="331" loading="lazy">
+                </div>
+                <div class="col-md-8 col-lg-6">
+                    <h2 class="mb-4">Qual o nosso propósito?</h2>
+                    <p>O propósito da nossa empresa é fazer com que cada cliente seja único. A BLANK surgiu com o objetivo de criar produtos que sejam reflexo das preferências, sonhos e ideias de cada pessoa, oferecendo algo verdadeiramente exclusivo.</p>
+                </div> 
+            </div>
+        </section>
+
+        <section id="galeria" class="my-5" tabindex="0" aria-label="Seção de galeria de imagens">
+            <h2 class="text-center py-5">Nossos Trabalhos</h2>
+            <div class="container p-3 mt-3 fundo-galeria">
+                <div class="row justify-content-center g-4">
+                    <div class="col-md-6 col-lg-5">
+                        <img src="img/imagem (1).jpg" alt="Produto BLANK 1" class="img-fluid rounded-5 w-100" loading="lazy">
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <img src="img/Imagem gerada.jpg" alt="Produto BLANK 2" class="img-fluid rounded-5 w-100" loading="lazy">
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <img src="img/imagem.jpg" alt="Produto BLANK 3" class="img-fluid rounded-5 w-100" loading="lazy">
+                    </div>
+                    <div class="col-md-6 col-lg-5">
+                        <img src="img/Imagem gerada (1).jpg" alt="Produto BLANK 4" class="img-fluid rounded-5 w-100" loading="lazy">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato" class="my-5">
+            <div class="container p-3 p-md-5 d-flex justify-content-center">
+                <div class="col-md-10 col-lg-8 rounded-5 formulario p-4 p-md-5">
+                    <h2 class="mb-4 text-center">Entre em contato</h2>
+                    <form>
+                        <div class="form-group mb-3">
+                            <label for="nome" class="form-label">Nome</label>
+                            <input type="text" id="nome" name="nome" class="form-control rounded-3 mt-1" placeholder="Digite seu nome completo" required>
+                        </div>
+                        <div class="form-group mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-control rounded-3 mt-1" placeholder="Digite seu email" required>
+                        </div>
+                        <div class="form-group mb-4">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" class="form-control rounded-4 mt-2" rows="4" placeholder="Escreva sua mensagem" required></textarea>
+                        </div>
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary btn-lg rounded-pill">Enviar mensagem</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="text-center p-3 fst-italic bg-light">
+        <p class="mb-3">Acesse nossas redes:</p>
+        <div class="mb-3">
+            <a href="#" class="text-decoration-none mx-2" aria-label="WhatsApp"><i class="bi bi-whatsapp fs-4"></i></a>
+            <a href="#" class="text-decoration-none mx-2" aria-label="Instagram"><i class="bi bi-instagram fs-4"></i></a>
+            <a href="#" class="text-decoration-none mx-2" aria-label="TikTok"><i class="bi bi-tiktok fs-4"></i></a>
+        </div>
+        <p class="mt-3 mb-0">Desenvolvido por Start by Luciano. Projeto fictício sem fins comerciais.</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+cores para o site (Marrom, preto, cinza, branco)
